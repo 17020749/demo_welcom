@@ -1,122 +1,145 @@
 @media (max-width: 677px) {
-  .pc {
-    display: none;
-  }
-  .open {
-    display: block;
-  }
+    .pc {
+        display: none;
+    }
+    .open {
+        display: block;
+    }
 }
+
 @media (min-width: 678px) {
-  .open {
-    display: none;
-  }
-  .header {
-    display: flex;
-  }
+    .open {
+        display: none;
+    }
+    .header {
+        display: flex;
+    }
 }
 
 .header {
-  height: 80px;
+    height: 80px;
 }
+
 .headerscroll {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: #fff;
-  color: black;
-  animation: fadein linear 0.7s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    color: black;
+    animation: fadein linear 0.7s;
 }
+
 .pc {
-  margin-left: 30%;
-  margin-top: 20px;
+    margin-left: 30%;
+    margin-top: 20px;
 }
+
 .pc ul,
 .mobie ul {
-  overflow-y: hidden;
-  list-style: none;
+    overflow-y: hidden;
+    list-style: none;
 }
-.pc ul li {
-  display: inline-block;
 
-  margin-right: 20px;
+.pc ul li {
+    display: inline-block;
+    margin-right: 20px;
 }
+
 .pc ul li a,
 .mobie ul li a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
+    text-transform: uppercase;
+    text-decoration: 30px;
+    color: black;
+    font-weight: bold;
 }
-.pc ul li:hover,
+
 .pc ul li a:hover,
 .mobie ul li a:hover {
-  cursor: pointer;
-  border-bottom: 2px solid rgb(233, 109, 109);
+    cursor: pointer;
+    border-bottom: 2px solid rgb(233, 109, 109);
 }
+
+.mobie ul li a:hover {
+    font-weight: bold;
+    color: palevioletred
+}
+
 .header img {
-  height: 70px;
-  border-radius: 50%;
-  margin: 5px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 5px;
 }
+
 .mobie {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  background-color: #fff;
-  transform: translateX(-100%);
-  transition: transform linear 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: transform linear 0.3s;
 }
+
 .mobie ul {
-  float: left;
+    float: left;
 }
+
 .mobie ul li {
-  list-style: none;
-  line-height: 30px;
+    list-style: none;
+    line-height: 30px;
 }
+
 .mobie ul li a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
+
 .close {
-  margin-left: 20px;
-  margin-right: 5px;
-  color: #ac9e9e;
-  font-size: 20px;
-  cursor: pointer;
+    margin-left: 20px;
+    margin-right: 5px;
+    color: #ac9e9e;
+    font-size: 20px;
+    cursor: pointer;
 }
+
 .open {
-  float: right;
-  font-size: 30px;
-  color: #726a6a;
-  margin-top: 20px;
-  margin-right: 20px;
-  cursor: pointer;
+    float: right;
+    font-size: 30px;
+    color: #726a6a;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
 }
+
 .open:hover {
-  color: #f0e9e9;
+    color: #f0e9e9;
 }
+
 .overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgb(0, 0, 0, 0.3);
-  animation: fadein linear 0.3s;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.3);
+    animation: fadein linear 0.3s;
 }
-.opencheck:checked ~ .overlay {
-  display: block;
+
+.opencheck:checked~.overlay {
+    display: block;
 }
-.opencheck:checked ~ .mobie {
-  transform: translateX(0);
+
+.opencheck:checked~.mobie {
+    transform: translateX(0);
 }
+
 @keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

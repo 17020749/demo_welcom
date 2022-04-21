@@ -2,7 +2,9 @@
   <div class="welcom">
     <Header />
     <div class="main"></div>
+    <Footer />
   </div>
+
 </template>
 <style scoped>
 .main {
@@ -16,8 +18,10 @@
 }
 </style>
 <script>
+import Footer from "../components/Footer.vue"
 export default {
   name: "IndexPage",
-  // layout: "defaut",
+  components: [Footer],
+  //layout: "defaut",
 };
 </script>

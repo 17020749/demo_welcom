@@ -5,18 +5,22 @@
       <label for="check" class="open">
         <i class="fa-solid fa-bars"></i>
       </label>
+      <!--nav pc -->
       <nav class="pc">
         <ul>
-          <li><a href="">wellcom</a></li>
+          <li><a href="">Wellcom</a></li>
           <li><a href="">Home</a></li>
           <li><a href="">Live stream</a></li>
           <li><a href="">Discover</a></li>
           <li><a href="">Gallery</a></li>
         </ul>
       </nav>
+      <!--end nav pc-->
     </header>
+
     <input type="checkbox" id="check" class="opencheck" style="display: none" />
     <label for="check" class="overlay"></label>
+    <!-- nav moblie-->
     <nav class="mobie">
       <label for="check" class="close">
         <i class="fa-solid fa-xmark"></i>
